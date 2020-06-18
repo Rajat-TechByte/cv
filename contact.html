@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact ME</title>
+  </head>
+  <body>
+    <h3>CONTACT ME</h3>
+    <ul>
+      <li>Email id = rajat.480@abc.com</li>
+      <li>Phone no.=8378297</li>
+    </ul>
+    <form class="" action="mailto:rajat.sanjay.soni@gmail.com" method="post" enctype="text/plain">
+<!-- when you wil press submit button in contact button it will bring you to the page mentioned in the action page
+    and method , in this case , simply means that we're going to transfer what the user types into
+    this input fields into the e-mail client.
+    enctype means encoding type as our website is encoded in UTF-8 so we are going to say that data
+    in our form is encoded in plain text so that way when it launches the amail app we don't find any kind of unusual signs.  -->
+
+      <label>Your Name :</label><br />
+<!--The HTML <br> element produces a line break in text (carriage-return)
+    now we wil have to add some values in the name data because it will identify the data that's inside each of these inputs.
+      -->
+      <input type="text" name="your Name"/><br />
+      <label>Your E-mail 📩 :</label><br />
+      <input type="email" name="your email "/><br />
+<!-- using the type email adds some validation at the time of typing the email-->
+      <label>Your Message 📫 :</label><br />
+      <textarea name="your message " rows="10" cols="30" ></textarea><br />
+      <input  type="submit" value="Submit !" />
+    </form>
+  </body>
+</html>
